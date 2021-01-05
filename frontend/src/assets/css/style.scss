@@ -1,0 +1,100 @@
+$extraSmallScreen   :   only screen and (max-width: 600px);
+$smallScreen        :   only screen and (min-width: 600px);
+$mediumScreen       :   only screen and (min-width: 768px);
+$mediumDownScreen       :   only screen and (max-width: 768px);
+$largeScreen        :   only screen and (min-width: 992px);
+$extraLargeScreen   :   only screen and (min-width: 1200px);
+$white              :   #fff;
+$blue               :   #001f5b;
+
+
+
+.container{
+    max-width : 1400px;
+    margin: 0 auto;
+}
+.clear{
+    clear:both;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.MuiAvatar-root{
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 auto;
+}
+.header{
+    background-color: $white;
+    margin: 0px;
+    padding: 15px;
+    color: red;
+    
+
+    &__logo{
+        display: block;
+        background-image: url('../images/logo.jpg');
+        width: 239px;
+        height: 52px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        float:left;
+
+        @media #{$mediumDownScreen} {
+            width: 139px;
+            height: 52px;
+        }
+
+    }
+
+    &__subtext{
+        color:  $blue;
+        font-weight: bold;
+        line-height: 60px;
+        margin-left: 15px;
+
+        @media #{$mediumDownScreen} {
+            display: none;
+        }
+    }
+}
+
+.card{
+    max-width: 415px;
+    padding: 5px;
+    font-size: 0.8em;
+    border-bottom: 1px solid #ebebeb;
+
+    &__info{
+        width: 100px;
+        float:left;
+    }
+
+    &__name{
+        font-weight:bold;
+        text-align: center;
+        
+    }
+
+    &__addr{
+        text-align: center;
+    }
+
+    &__details{
+        float:left;
+        width: 315px;
+    }
+
+    &__category span{
+        font-weight: bold;
+    }
+
+    &__star{
+        float: left;
+    }
+    
+    
+}
