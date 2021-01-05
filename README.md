@@ -127,13 +127,7 @@ Send a GET Request on this url :  `http://localhost:8080/wp-json/wp/v2/review`. 
 
 1. Install the CLI tool.
 	`npm i -g react-static`
-
-2. Run `npm start`
-
-
-
-
-
-
-
-
+2. `cd frontend`
+3. Run `npm install`
+4. Run `npm start`
+5. On the browser site is available at http://localhost:3000
